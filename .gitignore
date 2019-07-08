@@ -1,0 +1,3 @@
+.pytest_cache
+*.pyc
+D:\git_program\ui_automation\Test\cases\__pycache__\*.pyc

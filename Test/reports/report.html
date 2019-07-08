@@ -235,7 +235,7 @@ function filter_table(elem) {
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 30-May-2019 at 09:29:51 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v1.20.0</p>
+    <p>Report generated on 08-Jul-2019 at 14:24:44 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v1.20.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -254,7 +254,7 @@ function filter_table(elem) {
         <td>Python</td>
         <td>2.7.10</td></tr></table>
     <h2>Summary</h2>
-    <p>2 tests ran in 16.11 seconds. </p>
+    <p>2 tests ran in 15.18 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="rerun">0 rerun</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -270,34 +270,24 @@ function filter_table(elem) {
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
-          <td class="col-time">2019-05-30 01:29:49.325000</td>
+          <td class="col-time">2019-07-08 06:24:42.068000</td>
           <td class="col-name">test_se.py::TestSe::test_url[https://cn.bing.com/-Bingo]</td>
           <td>
         hello world
         </td>
-          <td class="col-duration">2.47</td></tr>
+          <td class="col-duration">1.91</td></tr>
         <tr>
           <td class="extra" colspan="5">
-            <div class="log">self = &lt;Test.cases.test_se.TestSe object at 0x0000000004607EF0&gt;<br/>browser = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="cec9578e0931b7a83cd35dc5f1d1ab29")&gt;<br/>url = 'https://cn.bing.com/', text = 'Bingo'<br/><br/>    @pytest.mark.parametrize("url, text", [<br/>        (config.url, u"百度"),<br/>        ("https://cn.bing.com/", "Bingo"),<br/>    ])<br/>    def test_url(self, browser, url, text):<br/>        """<br/>        hello world<br/>        """<br/>        browser.get(url)<br/>&gt;       assert text in browser.title<br/><span class="error">E       assert 'Bingo' in '微软 Bing 搜索 - 国内版'</span><br/><span class="error">E        +  where '微软 Bing 搜索 - 国内版' = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="cec9578e0931b7a83cd35dc5f1d1ab29")&gt;.title</span><br/><br/>test_se.py:21: AssertionError<br/>------------------------------ Captured log setup ------------------------------<br/>remote_connection.py       415 DEBUG    POST http://127.0.0.1:49683/session {"requiredCapabilities": {}, "desiredCapabilities": {"platform": "ANY", "browserName": "chrome", "version": "", "chromeOptions": {"args": [], "extensions": []}, "javascriptEnabled": true}}
-remote_connection.py       510 DEBUG    Finished Request------------------------------ Captured log call -------------------------------<br/>remote_connection.py       415 DEBUG    POST http://127.0.0.1:49683/session/cec9578e0931b7a83cd35dc5f1d1ab29/url {"url": "https://cn.bing.com/", "sessionId": "cec9578e0931b7a83cd35dc5f1d1ab29"}
-remote_connection.py       510 DEBUG    Finished Request
-remote_connection.py       415 DEBUG    GET http://127.0.0.1:49683/session/cec9578e0931b7a83cd35dc5f1d1ab29/title {"sessionId": "cec9578e0931b7a83cd35dc5f1d1ab29"}
-remote_connection.py       510 DEBUG    Finished Request</div></td></tr></tbody>
+            <div class="log">self = &lt;Test.cases.test_se.TestSe object at 0x00000000041F4A58&gt;<br/>browser = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="c21668d8a2fd8198e769423b4ddd1467")&gt;<br/>url = 'https://cn.bing.com/', text = 'Bingo'<br/><br/>    @pytest.mark.parametrize("url, text", [<br/>        (config.url, u"百度"),<br/>        ("https://cn.bing.com/", "Bingo"),<br/>    ])<br/>    def test_url(self, browser, url, text):<br/>        """<br/>        hello world<br/>        """<br/>        browser.get(url)<br/>&gt;       assert text in browser.title<br/><span class="error">E       assert 'Bingo' in '微软 Bing 搜索 - 国内版'</span><br/><span class="error">E        +  where '微软 Bing 搜索 - 国内版' = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="c21668d8a2fd8198e769423b4ddd1467")&gt;.title</span><br/><br/>test_se.py:18: AssertionError<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-time">2019-05-30 01:29:42.568000</td>
+          <td class="col-time">2019-07-08 06:24:35.430000</td>
           <td class="col-name">test_se.py::TestSe::test_url[https://www.baidu.com/-百度]</td>
           <td>
         hello world
         </td>
-          <td class="col-duration">4.48</td></tr>
+          <td class="col-duration">3.57</td></tr>
         <tr>
           <td class="extra" colspan="5">
-            <div class="log">------------------------------ Captured log setup ------------------------------<br/>remote_connection.py       415 DEBUG    POST http://127.0.0.1:49634/session {"requiredCapabilities": {}, "desiredCapabilities": {"platform": "ANY", "browserName": "chrome", "version": "", "chromeOptions": {"args": [], "extensions": []}, "javascriptEnabled": true}}
-remote_connection.py       510 DEBUG    Finished Request----------------------------- Captured stderr call -----------------------------<br/>[2019-05-30 09:29:42,562] - ERROR: 这个是错误日志
------------------------------- Captured log call -------------------------------<br/>remote_connection.py       415 DEBUG    POST http://127.0.0.1:49634/session/4ce708ad243b579fb3990870545b7664/url {"url": "https://www.baidu.com/", "sessionId": "4ce708ad243b579fb3990870545b7664"}
-remote_connection.py       510 DEBUG    Finished Request
-remote_connection.py       415 DEBUG    GET http://127.0.0.1:49634/session/4ce708ad243b579fb3990870545b7664/title {"sessionId": "4ce708ad243b579fb3990870545b7664"}
-remote_connection.py       510 DEBUG    Finished Request
-logger.py                   45 ERROR    这个是错误日志</div></td></tr></tbody></table></body></html>
+            <div class="empty log">No log output captured.</div></td></tr></tbody></table></body></html>

@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 
 import pytest
-from ..common import config
+from Test.common import config
 
 
 @pytest.mark.usefixtures("browser")
@@ -19,7 +19,8 @@ class TestSe(object):
 
 
 if __name__ == '__main__':
-    pytest.main(["-s", "test_se.py"])
+    pytest.main(["-s", "test_se.py", "--cmdopt=headless", "--html=../reports/report.html"])
+
 
 # 命令行指定浏览器: --cmdopt=firefox
 # 命令行指定测试报告: --html=../report/report.html

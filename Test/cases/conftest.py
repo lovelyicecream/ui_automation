@@ -1,6 +1,7 @@
 # -*- coding:utf-8 -*-
 import pytest
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
 
 def pytest_addoption(parser):
@@ -17,6 +18,10 @@ def browser(request):
         driver = webdriver.Chrome(executable_path="../drivers/chromedriver.exe")
     elif cmdopt == "firefox":
         driver = webdriver.Firefox()
+    elif cmdopt == "headless":
+        chrome_options = Options()
+        chrome_options.add_argument("--headless")
+        driver = webdriver.Chrome(executable_path="../drivers/chromedriver.exe", chrome_options=chrome_options)
 
     # driver.maximize_window()
 
