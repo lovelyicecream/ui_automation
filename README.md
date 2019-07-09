@@ -13,4 +13,4 @@ Construct:
 	               Test ----|-----  logs       :  日志文件
 				|-----  pages      :  页面对象
 				|-----  reports    :  测试报告
-				|-----  utils      :   封装方法
+				|-----  utils      :  封装方法
