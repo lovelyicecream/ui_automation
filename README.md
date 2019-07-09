@@ -10,7 +10,7 @@ Construct:
 				|-----  cases      :  测试用例
 				|-----  common     :  配置文件
 				|-----  driver     :  浏览器驱动
-	   Test ----|-----  logs       :  日志文件
+	               Test ----|-----  logs       :  日志文件
 				|-----  pages      :  页面对象
 				|-----  reports    :  测试报告
 				|-----  utils      :  封装方法
