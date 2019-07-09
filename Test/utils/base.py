@@ -32,6 +32,9 @@ class Browser(object):
     def get_title(self):
         return self.driver.title
 
+    def close_window(self):
+        self.driver.close()
+
     def find_element(self, locator, by=By):
         try:
             element = self.driver.find_element(by=by, value=locator)
