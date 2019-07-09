@@ -1,3 +1,6 @@
 .pytest_cache
 *.pyc
-D:\git_program\ui_automation\Test\cases\__pycache__\*.pyc
+.idea
+.gitignore
+Test/drivers/edgedriver.exe
+Test/drivers/geckodriver.exe
