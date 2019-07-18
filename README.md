@@ -2,7 +2,7 @@ Note:
  -  代码目前仅支持python2, 已通过2.7.10下运行测试
 
 Info:
- - 测试框架基于pytest+selenium
+ - 测试框架基于selenium + pytest + pytest-html
 
 Construct:
 
